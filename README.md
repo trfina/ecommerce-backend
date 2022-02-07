@@ -1,4 +1,3 @@
-# E-commerce Back End Starter Code
 # Object-Relational Mapping: e-commerce back-end
 [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
