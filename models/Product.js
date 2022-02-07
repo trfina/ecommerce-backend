@@ -17,16 +17,23 @@ Product.init(
     },
     product_name: {
       type: DataTypes.STRING,
-      defaultValue: "widgit",
+      defaultValue: 'widget',
       allowNull: false
       },
     price: {
       type: DataTypes.DECIMAL,
-      allowNull: false
+      allowNull: false,
+      validate: {
+        isDecimal: true
+      }
     },
     stock: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      defaultValue: 10,
+      validate: {
+        isNumeric: true  
+      }
     },
     category_id: {
       type: DataTypes.INTEGER,
